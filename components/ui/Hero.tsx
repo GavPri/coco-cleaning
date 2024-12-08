@@ -18,15 +18,20 @@ const Hero = () => {
           Manchester's Premier <br className="md:hidden"></br>Cleaning Services
         </h1>
         <p className="text-muted-forground max-w-lg text-xl hidden md:flex">
-          Expert cleaning services in Manchester for a spotless,<br></br> fresh home or
-          business. Affordable and reliable!
+          Expert cleaning services in Manchester for a spotless,<br></br> fresh
+          home or business. Affordable and reliable!
         </p>
         <div className="flex gap-2">
           <Button variant={"outline"} className="h-16 md:h-9 text-foreground">
-            Book <Calendar size={20} className="text-blue-500 hover:text-blue-600"/>
+            Book{" "}
+            <Calendar size={20} className="text-blue-500 hover:text-blue-600" />
           </Button>
           <Button variant={"secondary"} className="h-16 md:h-9 text-foreground">
-            Services <ArrowUpRight size={20}/>
+            Services{" "}
+            <ArrowUpRight
+              size={20}
+              className="text-blue-500 hover:text-blue-600"
+            />
           </Button>
         </div>
       </div>
