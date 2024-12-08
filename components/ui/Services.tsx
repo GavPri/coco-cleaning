@@ -5,7 +5,6 @@ import {
   ArrowRight,
   Building,
   HomeIcon,
-  Icon,
 } from "lucide-react";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
@@ -59,10 +58,6 @@ const services = [
   },
 ];
 
-type serviceIcon = [
-  { icon: React.ComponentType<{ size?: number; className?: string }> }
-];
-
 const Services = () => {
   return (
     <section className="flex flex-col gap-4">
@@ -77,7 +72,7 @@ const Services = () => {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {services.slice(0, 4).map((s) => (
-          <Card className="hover:-translate-y-1 hover:shadow-lg hover:cursor-pointer">
+          <Card className="hover:-translate-y-1 hover:shadow-lg hover:cursor-pointer" key={s.description}>
             <CardHeader className="inline-flex text-2xl">
               <s.icon className="text-blue-500 mb-2" />
               {s.name}

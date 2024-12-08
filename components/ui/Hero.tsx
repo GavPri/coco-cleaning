@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "./button";
-import { ArrowUpRight, Calendar, Mail, Phone } from "lucide-react";
+import { Calendar, Mail, Phone } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -16,7 +16,8 @@ const Hero = () => {
       />
       <div className="flex gap-6 flex-col md:items-start h-[300px]">
         <h1 className="text-3xl font-bold tracking-wide font-mono text-foreground">
-          Manchester's Premier <br className="md:hidden"></br>Cleaning Services
+          Manchester`&apos;`s Premier <br className="md:hidden"></br>Cleaning
+          Services
         </h1>
         <p className="text-muted-forground max-w-lg text-xl hidden md:flex">
           Expert cleaning services in Manchester for a spotless,<br></br> fresh

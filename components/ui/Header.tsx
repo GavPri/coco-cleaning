@@ -12,7 +12,7 @@ const NavigationBar = () => {
     setOpenMenu(!openMenu)
   }
   return (
-    <header className="w-full h-24 sticky top-0 shadow-md bg-background flex justify-between items-center px-4 z-10">
+    <header className="w-full h-24 sticky top-0 shadow-md bg-background flex justify-between items-center px-4 z-10 mx-auto">
       <nav className="flex justify-between items-center w-full">
         <Link href="/" className="text-bold font-mono">
           Coco Cleaning Co.

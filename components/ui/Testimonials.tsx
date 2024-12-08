@@ -33,11 +33,11 @@ const Testimonials = () => {
       <Carousel>
         <CarouselContent>
           {testimonials.map((t) => (
-            <CarouselItem>
+            <CarouselItem key={t.review}>
               <Card className="h-[300px]">
                 <CardHeader className="text-xl font-bold">{t.name}</CardHeader>
                 <CardContent className="italic text-thin text-lg">
-                  "{t.review}"
+                  `&quot;`{t.review}`&quot;`
                 </CardContent>
               </Card>
             </CarouselItem>
