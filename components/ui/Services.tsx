@@ -1,11 +1,6 @@
 import React from "react";
 import { Card, CardContent, CardFooter, CardHeader } from "./card";
-import {
-  ArrowLeftRight,
-  ArrowRight,
-  Building,
-  HomeIcon,
-} from "lucide-react";
+import { ArrowLeftRight, ArrowRight, Building, HomeIcon } from "lucide-react";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { GiVacuumCleaner } from "react-icons/gi";
@@ -67,14 +62,17 @@ const Services = () => {
           href="/"
           className="inline-flex items-center gap-2 text-sm text-muted-foreground"
         >
-          View more <ArrowRight size={20} className="text-blue-500" />
+          View more <ArrowRight size={20} className="text-yellow-800" />
         </Link>
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {services.slice(0, 4).map((s) => (
-          <Card className="hover:-translate-y-1 hover:shadow-lg hover:cursor-pointer" key={s.description}>
+        {services.slice(0, 3).map((s) => (
+          <Card
+            className="hover:-translate-y-1 hover:shadow-lg hover:cursor-pointer bg-gradient-to-br from-gray-50 to-yellow-50"
+            key={s.description}
+          >
             <CardHeader className="inline-flex text-2xl">
-              <s.icon className="text-blue-500 mb-2" />
+              <s.icon className="text-yellow-700 mb-2" />
               {s.name}
             </CardHeader>
             <CardContent className="text-lg">{s.description}</CardContent>

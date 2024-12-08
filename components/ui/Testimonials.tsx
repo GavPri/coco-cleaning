@@ -28,16 +28,16 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="mb-6 bg-mutedbackground">
+    <section className="hidden md:flex md:flex-col mb-6 bg-mutedbackground">
       <h2 className="text-xl font-bold my-6">What others have to say...</h2>
       <Carousel>
         <CarouselContent>
           {testimonials.map((t) => (
             <CarouselItem key={t.review}>
-              <Card className="h-[300px]">
+              <Card className="h-[300px] bg-gradient-to-br from-gray-50 to-yellow-50 text-yellow-900">
                 <CardHeader className="text-xl font-bold">{t.name}</CardHeader>
                 <CardContent className="italic text-thin text-lg">
-                  `&quot;`{t.review}`&quot;`
+                  &quot;{t.review}&quot;
                 </CardContent>
               </Card>
             </CarouselItem>
