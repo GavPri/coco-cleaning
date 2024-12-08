@@ -1,7 +1,8 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import { Button } from "./button";
-import { ArrowUpRight, Calendar } from "lucide-react";
+import { ArrowUpRight, Calendar, Mail, Phone } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -21,10 +22,26 @@ const Hero = () => {
           Expert cleaning services in Manchester for a spotless,<br></br> fresh
           home or business. Affordable and reliable!
         </p>
-        <div className="flex gap-2">
-          <Button variant={"outline"} className="h-16 md:h-9 text-foreground">
-            Book{" "}
-            <Calendar size={20} className="text-blue-500 hover:text-blue-600" />
+        <div className="flex gap-2 w-full items-start">
+          <Button className="h-16 md:h-9 text-background bg-gradient-to-tr from-blue-500 to to-blue-800">
+            Book <Calendar size={20} />
+          </Button>
+          <Button
+            className="h-16 md:h-9"
+            variant={"outline"}
+            onClick={() => (window.location.href = "tel:+353834802446")}
+          >
+            Call <Phone />
+          </Button>
+          <Button
+            className="h-16 md:h-9"
+            variant={"outline"}
+            onClick={() =>
+              (window.location.href =
+                "mailto:info@yourcompany.com?subject=Inquiry&body=Hello, I would like to know more about your services.")
+            }
+          >
+            Email <Mail />
           </Button>
         </div>
       </div>
