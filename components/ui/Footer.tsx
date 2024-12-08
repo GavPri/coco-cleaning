@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Menu, X } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
 import React from "react";
 import { buttonVariants } from "@/components/ui/button";
 import { FaTiktok } from "react-icons/fa";
