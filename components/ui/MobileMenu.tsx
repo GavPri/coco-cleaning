@@ -57,7 +57,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
             </NavigationMenuItem>
           ))}
         </NavigationMenu>
-        <section className="mt-auto mb-24 flex gap-4 justify-between px-6">
+        <section className="mt-auto mb-24 flex gap-4 justify-between px-6 w-1/2">
           {socialMediaLinks.map((link) => (
             <Link
               href={link.href}
