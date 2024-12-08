@@ -38,7 +38,10 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
   handleMenuClick,
 }) => {
   return (
-    <div className="h-12 w-12 grid items-center hover:cursor-pointer" onClick={handleMenuClick}>
+    <div
+      className="h-12 w-12 grid items-center hover:cursor-pointer"
+      onClick={handleMenuClick}
+    >
       {openMenu ? <X size={30} /> : <Menu size={30} />}
 
       <div
@@ -46,7 +49,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
           openMenu ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <NavigationMenu className="list-none flex flex-col items-center w-screen gap-8 mt-4 pl-4 justify-start">
+        <NavigationMenu className="list-none flex flex-col items-center w-screen gap-8 mt-4 pl-4 justify-start bg-background">
           {navLinks.map((link) => (
             <NavigationMenuItem className="w-screen" key={link.name}>
               <Link href={link.href}>
@@ -56,18 +59,18 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
               </Link>
             </NavigationMenuItem>
           ))}
+          <section className="mt-auto mb-24 flex gap-4 justify-between px-6 bg-background">
+            {socialMediaLinks.map((link) => (
+              <Link
+                href={link.href}
+                key={link.href}
+                className={buttonVariants({ variant: "outline" })}
+              >
+                <link.icon size={40} className="mr-2" />{" "}
+              </Link>
+            ))}
+          </section>
         </NavigationMenu>
-        <section className="mt-auto mb-24 flex gap-4 justify-between px-6 w-1/2">
-          {socialMediaLinks.map((link) => (
-            <Link
-              href={link.href}
-              key={link.href}
-              className={buttonVariants({ variant: "outline" })}
-            >
-              <link.icon size={40} className="mr-2" />{" "}
-            </Link>
-          ))}
-        </section>
       </div>
     </div>
   );

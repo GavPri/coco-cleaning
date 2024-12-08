@@ -26,13 +26,6 @@ const Hero = () => {
             Book{" "}
             <Calendar size={20} className="text-blue-500 hover:text-blue-600" />
           </Button>
-          <Button variant={"secondary"} className="h-16 md:h-9 text-foreground">
-            Services{" "}
-            <ArrowUpRight
-              size={20}
-              className="text-blue-500 hover:text-blue-600"
-            />
-          </Button>
         </div>
       </div>
     </div>
