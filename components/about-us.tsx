@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { MapPin, Phone, Mail, Heart, Star, ArrowRight } from "lucide-react";
+import { MapPin, Phone, Heart, Star, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 export default function AboutPage() {
@@ -75,7 +75,8 @@ export default function AboutPage() {
             </Link>
           </div>
           <p className="italic">
-            "Exceptional service and attention to detail. Highly recommended!"
+            &quot;Exceptional service and attention to detail. Highly
+            recommended!&quot;
           </p>
         </CardContent>
       </Card>

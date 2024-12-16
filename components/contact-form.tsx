@@ -307,21 +307,20 @@ export default function ContactForm() {
                           <Checkbox
                             checked={field.value?.includes(item)}
                             onCheckedChange={(checked) => {
-                              return checked
-                                ? field.onChange([...field.value, item])
-                                : field.onChange(
-                                    field.value?.filter(
-                                      (value) => value !== item
-                                    )
-                                  )
+                              const currentValue = field.value ?? []; // Ensure field.value is an array
+                              if (checked) {
+                                field.onChange([...currentValue, item]); // Add the item
+                              } else {
+                                field.onChange(
+                                  currentValue.filter((value) => value !== item)
+                                ); 
+                              }
                             }}
                           />
                         </FormControl>
-                        <FormLabel className="font-normal">
-                          {item}
-                        </FormLabel>
+                        <FormLabel className="font-normal">{item}</FormLabel>
                       </FormItem>
-                    )
+                    );
                   }}
                 />
               ))}
