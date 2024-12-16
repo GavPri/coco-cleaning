@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import NavigationBar from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
 import { Roboto_Flex } from "next/font/google";
-import css from "styled-jsx/css";
 
 const robotoFlex = Roboto_Flex({
   subsets: ["latin"],
