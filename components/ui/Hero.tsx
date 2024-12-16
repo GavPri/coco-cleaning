@@ -2,7 +2,8 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "./button";
-import { Calendar, Mail, Phone } from "lucide-react";
+import { Calendar, Mail} from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -30,16 +31,19 @@ const Hero = () => {
           <Button
             className="h-16 md:h-9"
             variant={"outline"}
-            onClick={() => (window.location.href = "tel:+353834802446")}
+            onClick={() =>
+              (window.location.href = "https://wa.me/447584291283")
+            }
           >
-            Call <Phone />
+            WhatsApp <FaWhatsapp />
           </Button>
+
           <Button
             className="h-16 md:h-9"
             variant={"outline"}
             onClick={() =>
               (window.location.href =
-                "mailto:info@yourcompany.com?subject=Inquiry&body=Hello, I would like to know more about your services.")
+                "mailto:cococleaningservices@yahoo.com?subject=Inquiry&body=Hello, I would like to know more about your services.")
             }
           >
             Email <Mail />
