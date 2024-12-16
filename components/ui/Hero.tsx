@@ -6,7 +6,7 @@ import { Calendar, Mail, Phone } from "lucide-react";
 
 const Hero = () => {
   return (
-    <div className=" mt-12 md:mt-24 flex flex-col items-start gap-8 md:flex-row-reverse text-yellow-900">
+    <div className=" mt-12 md:mt-24 flex flex-col items-center gap-8 md:flex-row-reverse text-yellow-900">
       <Image
         src={"/images/cocologo.jpg"}
         alt="coco cleaning co logo"
@@ -15,7 +15,7 @@ const Hero = () => {
         className="rounded-md"
       />
       <div className="flex gap-6 flex-col md:items-start md:h-[300px]">
-        <h1 className="text-xl md:text-2xl font-bold tracking-wide font-mono">
+        <h1 className="text-2xl md:text-2xl font-extrabold tracking-wide font-sans text-center md:text-left">
           Manchester&apos;s Premier <br className="md:hidden"></br>Cleaning
           Services
         </h1>
