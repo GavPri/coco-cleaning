@@ -56,7 +56,7 @@ const services = [
 const Services = () => {
   return (
     <section className="flex flex-col gap-4">
-      <h2 className="inline-flex items-center justify-between w-full text-2xl">
+      <h2 className="inline-flex items-center justify-between w-full text-2xl font-sans italic font-bold">
         Featured services{" "}
         <Link
           href="/"

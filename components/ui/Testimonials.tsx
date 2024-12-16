@@ -29,7 +29,9 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <section className="hidden md:flex md:flex-col mb-6 bg-mutedbackground">
-      <h2 className="text-xl font-bold my-6">What others have to say...</h2>
+      <h2 className="text-2xl font-bold my-6 font-sans italic">
+        What others have to say...
+      </h2>
       <Carousel>
         <CarouselContent>
           {testimonials.map((t) => (
